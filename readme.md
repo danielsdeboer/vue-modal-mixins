@@ -24,7 +24,7 @@ export default {
 Once you've included the mixin:
 
 ```html
-<!-- For example. You make your modal component's API as you see fit -->
+<!-- For example. You make your modal component's API as you see fit. -->
 
 <MyModal
   @hide-modal="hideModal($event.modalName)"
