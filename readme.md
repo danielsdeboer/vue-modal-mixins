@@ -1,6 +1,6 @@
 ## Overview
 
-A couple of simple mixings to manage local modal state. One for the mount point (`has-modal`) and one for the modal itself (`is-modal`).
+A couple of simple mixing to manage local modal state. One for the mount point (`has-modal`) and one for the modal itself (`is-modal`).
 
 ### Installation
 
@@ -24,6 +24,8 @@ export default {
 Once you've included the mixin:
 
 ```html
+<!-- For example. You make your modal component's API as you see fit -->
+
 <MyModal
   @hide-modal="hideModal($event.modalName)"
   :is-visible="modals.myModal.isVisible"
@@ -31,7 +33,7 @@ Once you've included the mixin:
 />
 ```
 
-### has-modal
+### is-modal
 
 `is-modal` is just a static mixin that provides a prop, `modalName` and a method, `hideModal()`, which emits a `hide-modal` event. 
 
