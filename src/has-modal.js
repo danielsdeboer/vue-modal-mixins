@@ -1,13 +1,10 @@
 import toCamelCase from 'lodash.camelcase'
 
-const upperFirst = str => str.charAt(0).toUpperCase() + str.slice(1)
-const pascalCase = str => upperFirst(toCamelCase(str))
-
 export default name => ({
   data () {
     return {
       modals: {
-        [name]: {
+        [toCamelCase(name)]: {
           isVisible: false
         },
       },
@@ -15,12 +12,12 @@ export default name => ({
   },
 
   methods: {
-    [`show${pascalCase(name)}Modal`] () {
-      this.modals[name].isVisible = true
+    showModal (name) {
+      this.modals[toCamelCase(name)].isVisible = true
     },
 
-    [`hide${pascalCase(name)}Modal`] () {
-      this.modals[name].isVisible = false
+    hideModal (name) {
+      this.modals[toCamelCase(name)].isVisible = false
     },
   },
 })
