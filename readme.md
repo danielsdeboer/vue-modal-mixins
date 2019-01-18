@@ -43,6 +43,17 @@ Once you've included the mixin:
 />
 ```
 
+It also attaches event listeners for the `escape` keycode (`27`) that closes the modal. The `closes-on-esc` prop controls whether this listener gets attached or not. It defaults to true, so you only have to set it when you don't want the functionality:
+
+```html
+<MyModal
+  @hide-modal="hideModal($event.modalName)"
+  :is-visible="modals.myModal.isVisible"
+  :closes-on-esc="false"
+  modal-name="myModal"
+/>
+```
+
 ### Or you could not use a modal at all
 
 If you have the luxury, try literally anything else: https://modalzmodalzmodalz.com/
