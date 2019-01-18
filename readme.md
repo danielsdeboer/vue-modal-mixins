@@ -1,6 +1,6 @@
 ## Overview
 
-A couple of simple mixing to manage local modal state. One for the mount point (`has-modal`) and one for the modal itself (`is-modal`).
+A couple of simple mixins to manage local modal state. One for the mount point (`has-modal`) and one for the modal itself (`is-modal`).
 
 ### Installation
 
