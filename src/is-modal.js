@@ -1,6 +1,6 @@
 export default {
   props: {
-    name: {
+    modalName: {
       type: String,
       required: true,
     },
@@ -8,7 +8,7 @@ export default {
 
   methods: {
     hideModal () {
-      this.$emit('hide-modal', { modal: this.name })
+      this.$emit('hide-modal', { modalName: this.modalName })
     },
   },
 }
