@@ -6,7 +6,7 @@ const toVarPart = str => upperFirst(toCamelCase(str))
 export default name => ({
   data () {
     return {
-      modal: {
+      modals: {
         [name]: {
           isVisible: false
         },
@@ -21,6 +21,6 @@ export default name => ({
 
     [`show${toVarPart(name)}Modal`] () {
       this.modal[name].isVisible = false
-    }
-  }
+    },
+  },
 })
