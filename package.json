@@ -1,6 +1,6 @@
 {
   "name": "vue-modal-mixins",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Mixins for Vue modals",
   "main": "src/index.js",
   "repository": {
