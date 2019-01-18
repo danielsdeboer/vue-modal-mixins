@@ -1,7 +1,14 @@
-export default name => ({
+export default {
+  props: {
+    name: {
+      type: String,
+      required: true,
+    },
+  },
+
   methods: {
     hideModal () {
-      this.$emit(`hide-${name}-modal`)
-    }
-  }
-})
+      this.$emit('hide-modal', { modal: this.name })
+    },
+  },
+}
