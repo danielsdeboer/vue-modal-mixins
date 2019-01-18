@@ -1,3 +1,2 @@
-import hasModal from './has-modal'
-
-export { hasModal }
+export { hasModal } from './has-modal'
+export { isModal } from './is-modal'

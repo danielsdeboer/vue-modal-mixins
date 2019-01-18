@@ -1,7 +1,7 @@
-export default {
+export default name => ({
   methods: {
     hideModal () {
-      this.$emit('hide-modal')
+      this.$emit(`hide-${name}modal`)
     }
   }
-}
+})
